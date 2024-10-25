@@ -24,7 +24,7 @@ public class ProdutoServicoService {
         return produtoServicoRepository.findById(id);
     }
 
-    public List<ProdutoServico> buscarProdutosPorNome(String nome) {
+    public List<ProdutoServico> buscarPorNome(String nome) {
         return produtoServicoRepository.findByNomeContaining(nome); // Corrigido para 'nome'
     }
 

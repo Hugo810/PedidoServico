@@ -30,7 +30,7 @@ public class ProdutoServicoController {
 
     @GetMapping("/buscarPorNome") // Ajustado para usar RequestParam
     public List<ProdutoServico> buscarProdutosPorNome(@RequestParam String nome) {
-        return produtoServicoService.buscarProdutosPorNome(nome);
+        return produtoServicoService.buscarPorNome(nome);
     }
 
     @PostMapping
